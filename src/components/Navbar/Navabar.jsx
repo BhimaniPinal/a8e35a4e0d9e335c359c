@@ -25,7 +25,7 @@ export const Navbar = () => {
       <AppBar position='static' color='primary'>
         <Toolbar>
           <Typography className={classes.title} variant='h6' noWrap>
-            Title For Project
+              Get information of Asteroid
           </Typography>
         </Toolbar>
       </AppBar>

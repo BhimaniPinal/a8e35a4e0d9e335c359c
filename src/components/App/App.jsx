@@ -1,6 +1,6 @@
 import "./App.css";
 import { Route, Router } from "react-router-dom";
-import { Home } from "./../Home/Home";
+import { Asteroid } from "./../Asteroid/Asteroid";
 import { Navbar } from "./../Navbar/Navabar";
 import history from "./../../routes/history";
 import React from "react";
@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <Router history={history}>
         <Route path={route.home} exact>
-          <Home />
+          <Asteroid />
         </Route>
       </Router>
     </div>
