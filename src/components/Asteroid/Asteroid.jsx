@@ -1,6 +1,7 @@
 import { Grid, Card, makeStyles, TextField, Button, CardHeader, CircularProgress, CardContent, Table, TableBody, TableContainer, Paper, TableRow, TableCell } from "@material-ui/core";
 import React, { useState } from "react";
 import {getInfoOfAsteroidApi, getInfoOfrendomAsteroidApi} from "./../../api/api"
+import {receiveCall, endCall} from  '../../video-call/tokbox';
 
 const useStyles = makeStyles({
   container: {
@@ -79,6 +80,12 @@ export const Asteroid = () => {
           </Button>
           <Button variant="contained" color="secondary" onClick={getRendomAsteroid}>
             Random Asteroid
+          </Button>
+          {/* <Button variant="contained" color="secondary" onClick={receiveCall}>
+            Receive call
+          </Button> */}
+          <Button variant="contained" color="secondary" onClick={endCall}>
+            End call
           </Button>
         </Grid>
       </Grid>
